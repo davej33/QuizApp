@@ -1,0 +1,125 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- *********************************** Headers and Questions ********************************** -->
+
+    <style name="header">
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:background">#000</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="instructions">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/blueLine</item>
+        <item name="android:layout_above">@id/nextBackView</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+    <style name="questions">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/question_background</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- ****************************** Question 1 & 4 Radio *********************************** -->
+    <style name="radioSet">
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="radioButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <!-- ****************************** Question 3 Input *********************************** -->
+
+    <style name="q3_input_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <!-- ****************************** Question 4 Checkboxes *********************************** -->
+
+    <style name="checkboxes">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <!-- ****************************** Final Score Page *********************************** -->
+
+    <style name="scoreMessage">
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <!-- ****************************** Back and Next Button Section ************************ -->
+
+    <style name="relViewButtons">
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">#000</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="backNextButtons">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:background">#000</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="backNextText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="welcome">Quiz App!</string>
+    <string name="instructions">Instructions: Answer\nthe questions!!!!</string>
+    <string name="getStarted">Let\'s GO!</string>
+    <string name="outtaHere">I\'m outta here!</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+
+
+    <!-- Question 1 Strings -->
+    <string name="q1Header">Question 1</string>
+    <string name="q1">Square root of 144?</string>
+    <string name="q1A">10</string>
+    <string name="q1B">11</string>
+    <string name="q1C">12</string>
+    <string name="q1D">13</string>
+
+    <!-- Question 2 Strings -->
+    <string name="q2Header">Question 2</string>
+    <string name="q2">3 + 6 * 4 - 1 equals?</string>
+    <string name="q2A">35</string>
+    <string name="q2B">22</string>
+    <string name="q2C">26</string>
+    <string name="q2D">27</string>
+
+    <!-- Question 3 Strings -->
+    <string name="q3Header">Question 3</string>
+    <string name="q3">3rd decimal in Pi?</string>
+    <string name="hint">Enter answer here</string>
+
+    <!-- Question 4 Strings -->
+    <string name="q4Header">Question 4</string>
+    <string name="q4">Primary numbers?</string>
+    <string name="checkboxTextA">1</string>
+    <string name="checkboxTextB">2</string>
+    <string name="checkboxTextC">3</string>
+    <string name="checkboxTextD">4</string>
+
+
+    <!-- Score Strings -->
+    <string name="scoreHeader">Fin!</string>
+    <string name="score">You made it!</string>
+    <string name="scoreButtonText">Yes!</string>
+    <string name="scoreBackButton">Lemme change\nsomething...</string>
+    <string name="scoreMessage">Want your score?</string>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/qm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/header"
+            android:text="@string/welcome" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/header"
+            android:layout_weight="0.25"
+            android:background="#03A9F4" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16">
+
+            <TextView
+                android:id="@+id/instructions"
+                style="@style/instructions"
+                android:background="@drawable/background"
+                android:text="@string/instructions" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relViewButtons">
+
+            <TextView
+                style="@style/backNextText"
+                android:layout_toLeftOf="@+id/nextButton"
+                android:text="@string/getStarted" />
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                style="@style/backNextButtons"
+                android:layout_alignParentRight="true"
+                android:onClick="nextButton"
+                android:src="@drawable/next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

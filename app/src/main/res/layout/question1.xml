@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/qm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/header"
+            android:text="@string/q1Header" />
+
+        <TextView
+            android:id="@+id/blueLine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:layout_below="@+id/header"
+            android:background="#03A9F4" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+
+                    android:id="@+id/questions"
+                    style="@style/questions"
+                    android:text="@string/q1" />
+
+                <RadioGroup
+                    android:id="@+id/radioSet"
+                    style="@style/radioSet"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_q1A"
+                        style="@style/radioButtons"
+                        android:text="@string/q1A" />
+
+                    <RadioButton
+                        android:id="@+id/radio_q1B"
+                        style="@style/radioButtons"
+                        android:text="@string/q1B" />
+
+                    <RadioButton
+                        android:id="@+id/radio_q1C"
+                        style="@style/radioButtons"
+                        android:text="@string/q1C" />
+
+                    <RadioButton
+                        android:id="@+id/radio_q1D"
+                        style="@style/radioButtons"
+                        android:text="@string/q1D" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nextBackView"
+            style="@style/relViewButtons">
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                style="@style/backNextButtons"
+                android:onClick="backButton"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/backNextText"
+                android:layout_toRightOf="@id/backbutton"
+                android:text="@string/back" />
+
+            <TextView
+                style="@style/backNextText"
+                android:layout_toLeftOf="@+id/nextButton"
+                android:text="@string/next" />
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                style="@style/backNextButtons"
+                android:layout_alignParentRight="true"
+                android:onClick="nextButton"
+                android:src="@drawable/next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
