@@ -27,7 +27,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight=".25"
-            android:layout_below="@+id/header"
             android:background="#03A9F4" />
 
         <RelativeLayout
@@ -45,10 +44,9 @@
                 android:padding="8dp">
 
                 <TextView
-
-                    android:id="@+id/questions"
                     style="@style/questions"
-                    android:text="@string/q1" />
+                    android:text="@string/q1"
+                    android:background="@drawable/question_background"/>
 
                 <RadioGroup
                     android:id="@+id/radioSet"

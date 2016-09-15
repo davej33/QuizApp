@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         {
             /* method to calculate and display score*/
             displayScore();
+
         }
 
     }
@@ -126,23 +127,29 @@ public class MainActivity extends AppCompatActivity {
 
         /* creates output message to display */
         TextView scoreTextView = (TextView) findViewById(R.id.finalScore);
-        String scoreMessage = "    " + score + " out of 4 = " + percent + "%";
+        String scoreMessage = score + " out of 4 = " + percent + "%";
 
         if (score == 0) {
-            scoreMessage += "\n   Doodoo brown :(";
+            scoreMessage += "\nDoodoo brown :(";
         } else if (score == 1) {
-            scoreMessage += "\n   English major?";
+            scoreMessage += "\nEnglish major";
         } else if (score == 2) {
-            scoreMessage += "\n    Pretty good";
+            scoreMessage += "\nPretty good";
         } else if (score == 3) {
-            scoreMessage += "\n     Supagood";
+            scoreMessage += "\nSupagood";
         } else {
             scoreMessage += "\nMathematical genius!";
         }
 
         /* displays message on device */
         scoreTextView.setText(scoreMessage);
+
+        TextView madeIt = (TextView) findViewById(R.id.scoreHeader);
+        String finalScore = "SCORE";
+        madeIt.setText(finalScore);
     }
+
+
 
     /* Warnings that I couldn't resolve
     09-14 06:05:46.466 16354-16354/com.example.android.quizapp W/System: ClassLoader referenced unknown path: /data/app/com.example.android.quizapp-1/lib/arm
