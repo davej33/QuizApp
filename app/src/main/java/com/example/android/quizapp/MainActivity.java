@@ -63,13 +63,15 @@ public class MainActivity extends AppCompatActivity {
         } else if (questionNum == 4) {
             EditText answer3 = (EditText) findViewById(R.id.q3_input);
             String answer3string = answer3.getText().toString();
+
+            if (answer3string.matches("")) {
+                setContentView(R.layout.question4);
+                return;}
+
+
             int a3int = Integer.parseInt(answer3string);
 
-            if (answer3string == null || answer3string.equals("")) {
-                Toast empty = Toast.makeText(this,"Toast", Toast.LENGTH_SHORT);
-                empty.show();
-                setContentView(R.layout.question4);
-            } else if (a3int == 1) {
+            if (a3int == 1) {
                 answer3store = 1;
             } else {
                 answer3store = 0;

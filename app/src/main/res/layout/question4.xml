@@ -25,8 +25,8 @@
         <TextView
             android:id="@+id/blueLine"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/header"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
             android:background="#03A9F4" />
 
         <RelativeLayout
@@ -44,8 +44,8 @@
 
                 <TextView
                     style="@style/questions"
-                    android:text="@string/q4"
-                    android:background="@drawable/question_background"/>
+                    android:background="@drawable/question_background"
+                    android:text="@string/q4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">QuizApp</string>
     <string name="welcome">Quiz App!</string>
-    <string name="instructions">Instructions: Answer\nthe questions!!!!</string>
+    <string name="instructions">Instructions:\nAnswer\nthe questions!</string>
     <string name="getStarted">Let\'s GO!</string>
     <string name="outtaHere">I\'m outta here!</string>
     <string name="back">Back</string>
