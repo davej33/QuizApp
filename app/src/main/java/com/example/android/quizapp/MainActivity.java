@@ -2,6 +2,10 @@ package com.example.android.quizapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Layout;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.AlignmentSpan;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -126,24 +130,32 @@ public class MainActivity extends AppCompatActivity {
         int percent = 100 * score / 4;
 
         /* creates output message to display */
-        TextView scoreTextView = (TextView) findViewById(R.id.finalScore);
         String scoreMessage = score + " out of 4 = " + percent + "%";
 
         if (score == 0) {
-            scoreMessage += "\nDoodoo brown :(";
+            scoreMessage += "\nDoodoo Brown :(";
         } else if (score == 1) {
-            scoreMessage += "\nEnglish major";
+            scoreMessage += "\nEnglish Major";
         } else if (score == 2) {
-            scoreMessage += "\nPretty good";
+            scoreMessage += "\nPretty Good";
         } else if (score == 3) {
             scoreMessage += "\nSupagood";
         } else {
-            scoreMessage += "\nMathematical genius!";
+            scoreMessage += "\nMathematical Genius!";
         }
 
-        /* displays message on device */
-        scoreTextView.setText(scoreMessage);
+        /* center Toast Text */
 
+        Spannable centerToastText = new SpannableString(scoreMessage);
+        centerToastText.setSpan(new AlignmentSpan.Standard(Layout.Alignment.ALIGN_CENTER),
+                0, centerToastText.length() - 1,
+                Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+
+         /* display message on device */
+        Toast displayScore = Toast.makeText(this, centerToastText, Toast.LENGTH_LONG);
+        displayScore.show();
+
+        /* change textview text */
         TextView madeIt = (TextView) findViewById(R.id.scoreHeader);
         String finalScore = "SCORE";
         madeIt.setText(finalScore);

@@ -40,9 +40,7 @@
 
     <!-- Score Strings -->
     <string name="scoreHeader">Fin!</string>
-    <string name="score">You made it!</string>
+    <string name="score">Want your score?</string>
     <string name="scoreButtonText">Yes!</string>
     <string name="scoreBackButton">Lemme change\nsomething...</string>
-    <string name="scoreMessage">Want your score?</string>
-
 </resources>

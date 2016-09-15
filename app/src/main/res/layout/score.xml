@@ -45,13 +45,10 @@
                 <TextView
                     android:id="@+id/scoreHeader"
                     style="@style/questions"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
                     android:text="@string/score" />
-
-                <TextView
-                    android:id="@+id/finalScore"
-                    style="@style/scoreMessage"
-                    android:text="@string/scoreMessage"/>
-
             </LinearLayout>
         </RelativeLayout>
 
